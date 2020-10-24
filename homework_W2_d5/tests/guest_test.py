@@ -11,5 +11,9 @@ class TestGuest(unittest.TestCase):
         self.guest3 = Guest("Anthony", 40.00)
         self.guest4 = Guest("Lauchy", 10.00)
 
+# Initial Tests
     def test_guest_has_name(self):
         self.assertEqual("Anthony", self.guest3.name)
+
+    def test_another_guest_has__name(self):
+        self.assertEqual("Lauchy", self.guest4.name)
