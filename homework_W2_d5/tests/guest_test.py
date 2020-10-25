@@ -6,10 +6,10 @@ class TestGuest(unittest.TestCase):
 
 # Set up our guest objects from Guest class    
     def setUp(self):
-        self.guest1 = Guest("Emma", 50.00)
-        self.guest2 = Guest("Simon", 30.00)
-        self.guest3 = Guest("Anthony", 40.00)
-        self.guest4 = Guest("Lauchy", 10.00)
+        self.guest1 = Guest("Emma")
+        self.guest2 = Guest("Simon")
+        self.guest3 = Guest("Anthony")
+        self.guest4 = Guest("Lauchy")
 
 # Initial Tests
     def test_guest_has_name(self):

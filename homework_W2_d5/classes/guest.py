@@ -1,6 +1,3 @@
 class Guest:
-    def __init__(self, imput_name, imput_cash):
+    def __init__(self, imput_name):
         self.name = imput_name
-        self.cash = imput_cash
-
-        

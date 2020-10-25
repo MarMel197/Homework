@@ -5,14 +5,18 @@ from classes.song import Song
 class TestSong(unittest.TestCase):
 
     def setUp(self):
-        self.song1 = Song("Rock a bye your bear")
-        self.song2 = Song("Apples and Bananas")
-        self.song3 = Song("Do the propeller")
-        self.song4 = Song("Captains magic buttons")
+        self.test_song1 = Song("Infinite Dreams", "Iron Maiden") 
+        self.test_song2 = Song("The Fly", "U2") 
 
 # Initial tests    
     def test_check_song_has_name(self):
-        self.assertEqual("Rock a bye your bear", self.song1.song)
-    
+        self.assertEqual("Infinite Dreams", self.test_song1.song)
+
     def test_check_another_song__name(self):
-        self.assertEqual("Captains magic buttons", self.song4.song)
+        self.assertEqual("The Fly", self.test_song2.song)
+    
+    def test_check_song_has_artist(self):
+        self.assertEqual("Iron Maiden", self.test_song1.artist)
+
+    def test_check_another_song__artist(self):
+        self.assertEqual("U2", self.test_song2.artist)
