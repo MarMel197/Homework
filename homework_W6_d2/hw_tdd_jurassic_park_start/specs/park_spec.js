@@ -2,14 +2,10 @@ const assert = require('assert');
 const Park = require('../models/park.js');
 const Dinosaur = require('../models/dinosaur.js');
 
-let velociraptor = Dinosaur('Velociraptor', 'carnivore', 200);
-let stegasaurus = Dinosaur('Stegasaurus', 'herbivore', 10);
-let spinosaurus = Dinosaur('Spinosaurus', 'carnivore', 100);
-
-
 describe('Park', function() {
   
   let park;
+  // Need to do lets for dinosaurs
 
   beforeEach(function () {
     park = new Park('Jurassic', 14.99);
@@ -35,8 +31,8 @@ describe('Park', function() {
 
   it('should be able to add a dinosaur to its collection', function() {
     park.addDinosaur('Velociraptor')
-    const actual  = park.numberOfDinosaurs();
-    assert.strictEqual(actual, 1);
+    const actual  = park.dinosaurs;
+    assert.strictEqual(actual, ['Velociraptor']);
   });
 
   it('should be able to remove a dinosaur from its collection', function(){
