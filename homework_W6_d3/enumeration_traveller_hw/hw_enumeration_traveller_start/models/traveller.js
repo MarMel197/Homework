@@ -31,19 +31,18 @@ Traveller.prototype.calculateTotalDistanceTravelled = function () {
     return total + journey.distance;
   }, 0);
 };
-
+// Good way to filter out unique things in array
 Traveller.prototype.getUniqueModesOfTransport = function () {
   return this.journeys.map((journey) => {
     return journey.transport;
   })
   .filter((transport, index, array) => {
+    console.log("Array:", array);
+    console.log("Transport:", transport, "Index:", index, "IndexOf", array.indexOf(transport))
     return array.indexOf(transport) === index;
+
   });
 };
-  // return this.journeys.map((journey) => {
-  //   return new Set(journey.transport);
-//   })
-// };
 
 
 module.exports = Traveller;
