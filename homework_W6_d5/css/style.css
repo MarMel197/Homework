@@ -11,4 +11,8 @@
 
 .driver-list-item {
     border 2px solid;
+    background-color: black;
+    color: white;
+    padding: 5px;
+    margin: 10px;
 }

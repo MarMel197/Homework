@@ -22,15 +22,15 @@ const createDriverListItem = function (form) {
     const driverListItem = document.createElement('li');
     driverListItem.classList.add('driver-list-item')
 
-    const driver = document.createElement('h2');
+    const driver = document.createElement('h4');
     driver.textContent = form.driver.value;
     driverListItem.appendChild(driver);
 
-    const team = document.createElement('h3');
+    const team = document.createElement('h5');
     team.textContent = form.team.value;
     driverListItem.appendChild(team);
 
-    const nationality = document.createElement('h3');
+    const nationality = document.createElement('h5');
     nationality.textContent = form = form.nationality.value;
     driverListItem.appendChild(nationality);
 
